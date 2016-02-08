@@ -16,6 +16,12 @@ makeClassy  ''Pool
 makeWrapped ''Pool
 
 
+-- === Utils === --
+
+allocate :: Pool a -> (a, Pool a)
+allocate (Pool (a : as)) = (a , Pool as)
+
+
 -- === Instances === --
 
 -- Primitive
@@ -31,4 +37,3 @@ instance Monoid (Pool a) where
 type instance Item (Pool a) = a
 instance  FromList (Pool a) where fromList = wrap'   ; {-# INLINE fromList #-}
 instance  ToList   (Pool a) where toList   = unwrap' ; {-# INLINE toList   #-}
-
