@@ -1,0 +1,22 @@
+author: Wojciech Danilo
+bug-reports: https://github.com/wdanilo/data-pool/issues
+category: Text
+copyright: Copyright (C) 2016 Wojciech Danilo
+default-extensions: [ConstraintKinds, DataKinds, DefaultSignatures, DeriveDataTypeable,
+  DeriveFoldable, DeriveFunctor, DeriveGeneric, DeriveTraversable, DoAndIfThenElse,
+  EmptyDataDecls, FlexibleContexts, FlexibleInstances, FunctionalDependencies, GeneralizedNewtypeDeriving,
+  InstanceSigs, LambdaCase, MultiParamTypeClasses, OverloadedStrings, StandaloneDeriving,
+  ScopedTypeVariables, TemplateHaskell, TupleSections, TypeOperators, ViewPatterns,
+  TypeFamilies]
+dependencies: [base >=4.6 && <4.10, container, data-default, lens, lens-utils]
+ghc-options: [-Wall, -O2]
+homepage: https://github.com/wdanilo/data-pool
+library:
+  exposed-modules: [Data.Pool]
+  source-dirs: src
+license: Apache-2.0
+maintainer: Wojciech Danilo <wojciech.danilo@gmail.com>
+name: data-pool
+stability: experimental
+synopsis: Pool data structure.
+version: 1.0.2
