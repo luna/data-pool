@@ -1,7 +1,6 @@
 module Data.Pool where
 
 import Prelude
-import Control.Lens
 import Data.Default
 import Data.Monoid
 import Data.Container     hiding (free)
@@ -11,9 +10,8 @@ import Control.Lens.Utils
 
 -- === Declarations === --
 
-data Pool a = Pool { _free :: [a] } deriving (Show, Functor, Foldable, Traversable)
+newtype Pool a = Pool { _free :: [a] } deriving (Show, Functor, Foldable, Traversable)
 makeClassy  ''Pool
-makeWrapped ''Pool
 
 
 -- === Utils === --
