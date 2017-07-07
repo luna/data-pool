@@ -19,4 +19,4 @@ maintainer: Wojciech Danilo <wojciech.danilo@gmail.com>
 name: data-pool
 stability: experimental
 synopsis: Pool data structure.
-version: 1.0.6
+version: 1.0.7
